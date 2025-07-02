@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #111;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+
+.nav-menu li {
+  margin: 0 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.nav-menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Sections */
+section {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Unique section backgrounds */
+#home { background-color: #1abc9c; }
+#about { background-color: #3498db; }
+#services { background-color: #f39c12; }
+#contact { background-color: #9b59b6; }
+
+/* Home Content */
+.home-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.home-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.home-content button:hover {
+  background-color: #ffd700;
+}
+
+/* Section Content Styling */
+.section-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.section-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section-content p, .section-content ul {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.section-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-content ul li::before {
+  content: " ";
+}
+
+/* Contact Form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+#contact button {
+  background-color: #fff700;
+  color: black;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #ffd700;
+}
